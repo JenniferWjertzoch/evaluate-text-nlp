@@ -1,0 +1,16 @@
+main {
+    background-color: rgb(127, 173, 242);
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 15px;
+    box-shadow: 0 2px 4px 0 rgba(244, 234, 234, .2),
+                0 25px 50px 0 rgba(0, 0, 0, .1);
+    margin: 0 auto;
+    width: 370px;
+}
+
+.main-area {
+    background: url('/src/client/images/26818.png') center/contain no-repeat;
+    border-radius: 15px;
+    height: 246px;
+}
+

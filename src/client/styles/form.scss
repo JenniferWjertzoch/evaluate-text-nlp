@@ -1,0 +1,68 @@
+$myFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$myColor: #242548;
+$myWidth: 327px;
+$myBorderRadius: 8px;
+$myFontSize: 18px;
+$myLineHeight: 1.4em;
+
+@mixin padding-margin {
+    margin: 24px 16px;
+    padding: 8px 16px;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: $myColor;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+textarea[type="text"] {
+    @include padding-margin;
+    border: none;
+    border-radius: $myBorderRadius;
+    font-size: $myFontSize;
+}
+
+textarea,
+label {
+    font-family: $myFont;
+    line-height: $myLineHeight;
+    width: $myWidth;
+}
+
+.submit-button {
+    background-color: rgb(242, 113, 136);
+    border-color: rgba(255, 255, 255, .8);
+    border-radius: $myBorderRadius * 2;
+    border-style: dashed;
+    color: $myColor;
+    font-size: $myFontSize;
+    margin-top: 10px;
+    padding: 24px;
+    width: $myWidth / 2;
+}
+
+.text-results {
+    @include padding-margin;
+    border: 0;
+    border-radius: $myBorderRadius;
+    color: $myColor;
+    font-family: $myFont;
+    font-size: $myFontSize;
+    line-height: $myLineHeight;
+}
+
+// Tablet
+@media only screen and (max-width: 768px) {
+    input[type="text"] {
+        width: 95%;
+    }
+}

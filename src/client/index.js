@@ -6,7 +6,9 @@ import './styles/footer.scss'
 import './styles/form.scss'
 import './styles/header.scss'
 
+import homeIcon from '../client/images/26818.jpg'
 
-export {
-    handleSubmit
-}
+const homeImg = document.querySelector('[data-element=home]')
+homeImg.src = homeIcon
+
+export { handleSubmit }

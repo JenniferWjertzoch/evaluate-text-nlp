@@ -9,8 +9,12 @@ main {
 }
 
 .main-area {
-    background: url('/src/client/images/26818.png') center/contain no-repeat;
     border-radius: 15px;
-    height: 246px;
 }
 
+.main-area img {
+    display: block;
+    height: 246px;
+    margin-left: auto;
+    margin-right: auto;
+}

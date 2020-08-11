@@ -19,7 +19,7 @@ To start the webpack dev server at port 8080
 ` $ npm run build-dev`
 
 ### run in production mode
-Generate the dist files and then start server at port 8082
+Generate the dist files and then start server at port 8083
 
 ` $ npm run build-prod`
 
